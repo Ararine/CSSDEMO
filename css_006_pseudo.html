@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_006_pseudo.html</title>
+    <!--pseudo class 작성에는 순서가 존재한다.
+        :link - :visited -:hover - :active 순으로 작성한다.-->
+    <style type="text/css">
+      /* 처음 방문하는 사이트 */
+      a:link {
+        color: red;
+      }
+      /* 재방문하는 사이트 */
+      a:visited {
+        color: green;
+      }
+      /* 클릭을 하고 있을 때 */
+      a:active {
+        color: blue;
+      }
+      /* 마우스를 가져다 댔을 때 */
+      a:hover {
+        color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://w3schools.com">W3schools</a>
+  </body>
+</html>
