@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+      /* float
+        1. float 는 박스의 위치를 부모요소의 안에서 
+        왼쪽 또는 오른쪽으로 이동시키는 기능이다.
+        2. float 가 지정된 박스는 문서의 일반적인 
+        흐름에 영향을 받지 않으면서 이동된 위치에 떠 있다. */
+
+      /* background 의 크기는 따로 설정이 없을 때 
+        가로크기는 body 값을 따르고 세로 크기는 content 내용에 따른다. */
+
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+      /* float 은 부모기준으로 왼쪽, 오른쪽으로 나뉜다. */
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+      /* float을 해제하기 위해서 clear를 사용한다.
+      단, inline 속성은 적용되지 않는다. 
+      left , right , both */
+      div.wrap p {
+        clear: both;
+      }
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="고수 영화배우" />
+      <p>
+        21세기 기업은 국경을 뛰어넘어 세계에서 돈을 벌어들이지만, 소비자는
+        자신이 사는 나라의 법률과 법원을 넘지 못합니다. 그런데 한국의 사법제도는
+        삼성, 애플, 폭스바겐, 옥시 같은 글로벌 기업에 유난히 유리합니다. 이들
+        회사가 휴대전화의 성능을 속이고 엉터리 살균제를 만들어도 한국 소비자는
+        좀처럼 배상받기 어렵습니다. 다른 나라 소비자는 한국의 수천 배 넘는
+        배상을 받습니다. 이 때문에 한국에서 기업은 더욱 부도덕해지고, 소비자는
+        더욱 불리해집니다. 글로벌 기업 시대, 한국의 소비자 권리를 5회에 걸쳐
+        살펴봅니다. <편집자 주>
+      </p>
+    </div>
+  </body>
+</html>
