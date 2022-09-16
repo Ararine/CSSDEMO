@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+
+      header {
+        width: 800px;
+        height: 200px;
+        list-style-type: none;
+      }
+
+      header * {
+        width: 0;
+        height: 0;
+      }
+
+      div.header1 {
+        width: 1200px;
+        height: 135px;
+        background-color: red;
+        float: left;
+        position: relative;
+      }
+
+      div.header2 {
+        width: 1200px;
+        height: 65px;
+        background-color: yellow;
+        float: left;
+        position: relative;
+      }
+
+      div.header1 .logo {
+        font-size: 0px;
+      }
+
+      div.header1 .logo .logobt {
+        width: 182px;
+        height: 39px;
+        left: 109px;
+        top: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="header1">
+          <div class="logo" id="">
+            <label for="logobt" id="label">logo</label>
+            <input
+              type="image"
+              src="images/logo.gif"
+              alt="logobutton"
+              id="logobt"
+            />
+          </div>
+          <!-- <div class="search" id="">
+            <input type="text" name="search" id="search" placeholder="search" />
+            <div class="box1"><a href=""></a></div>
+          </div>
+          <div class="tap1" id="">
+            <ul>
+              <li id="login">로그인</li>
+              <li id="signup">회원가입</li>
+              <li id="mypage">마이페이지</li>
+              <li id="use">이용안내</li>
+              <li id="service">고객센터</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header2">
+          <li id="dpage">상세 페이지</li>
+          <li id="bag">장바구니</li>
+          <li id="gallery">고객 갤러리</li>
+          <li id="order">주문배송</li>
+          <li id="question">자주 하는 질문</li> -->
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
